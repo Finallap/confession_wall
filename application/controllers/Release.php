@@ -5,6 +5,7 @@ class Release extends CI_Controller {
 
 	public function index()
 	{
+		var_dump($_SESSION['open_id']);
 		$open_id = $_SESSION['open_id'];
 		$this->check_is_wechat($open_id);
 
