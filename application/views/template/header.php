@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>iService信息页面<?php echo $title;?></title>
+    <title>iService表白墙</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -84,6 +84,14 @@
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="<?php echo base_url('recruit/notification_list/job_campus');?>">招聘公告</a></li>
                     <li><a href="<?php echo base_url('recruit/notification_list/teachin');?>">招聘宣讲会</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a  href="#" class="dropdown-toggle" data-toggle="dropdown">表白墙 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://wechat.aifuwu.org/confession_wall/">表白信息查看</a></li>
+                    <li><a href="http://wechat.aifuwu.org/confession_wall/release/">发布表白</a></li>
                   </ul>
                 </li>
 
