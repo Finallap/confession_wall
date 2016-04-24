@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Confession_wall_model extends CI_Model{
 
-	var $db_connect_connect;
+	var $db_connect;
 
 	public function __construct() 
 	{	
