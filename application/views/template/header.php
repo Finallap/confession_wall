@@ -71,19 +71,19 @@
                 <li class="dropdown">
                   <a  href="#" class="dropdown-toggle" data-toggle="dropdown">通知公告 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="<?php echo base_url('notification/notification_list/njupt');?>">校级通知</a></li>
-                    <li><a href="<?php echo base_url('notification/notification_list/jwc');?>">教务处</a></li>
-                    <li><a href="<?php echo base_url('notification/notification_list/xsc');?>">学工处</a></li>
-                    <li><a href="<?php echo base_url('notification/notification_list/bwc');?>">保卫处</a></li>
-                    <li><a href="<?php echo base_url('notification/notification_list/hqc');?>">后勤处</a></li>
+                    <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/njupt">校级通知</a></li>
+                    <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/jwc">教务处</a></li>
+                    <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/xsc">学工处</a></li>
+                    <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/bwc">保卫处</a></li>
+                    <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/hqc">后勤处</a></li>
                   </ul>
                 </li>
 
                 <li class="dropdown">
                   <a  href="#" class="dropdown-toggle" data-toggle="dropdown">招聘信息 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="<?php echo base_url('recruit/notification_list/job_campus');?>">招聘公告</a></li>
-                    <li><a href="<?php echo base_url('recruit/notification_list/teachin');?>">招聘宣讲会</a></li>
+                    <li><a href="http://wechat.aifuwu.org/recruit/recruit/notification_list/job_campus">招聘公告</a></li>
+                    <li><a href="http://wechat.aifuwu.org/recruit/recruit/notification_list/teachin">招聘宣讲会</a></li>
                   </ul>
                 </li>
 
