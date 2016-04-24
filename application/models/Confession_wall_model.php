@@ -8,7 +8,7 @@ class Confession_wall_model extends CI_Model{
 	public function __construct() 
 	{	
 		parent::__construct();
-		$this->db_connect_connect= $this->load->database ('db_connect2', TRUE);
+		$this->db_connect_connect= $this->load->database ('db2', TRUE);
 	}
 
 	public function get_confession_message($count=10,$offset=0) //获取按条件搜索出的用户列表
