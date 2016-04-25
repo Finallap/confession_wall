@@ -19,7 +19,7 @@
                   <h3 class="box-title">发布表白</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="post" action="<?php echo base_url('release/action');?>">
+                <form role="form" method="post" action="<?php echo base_url('release/action');?>" onSubmit="return check()">
                   <div class="box-body">
                     <div class="form-group">
                       <label for="exampleInputEmail1">谁发布的表白</label>
@@ -46,3 +46,24 @@
             </div>
           </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
+
+      <script type="text/javascript"> 
+      function check()
+      {
+          if(document.getElementsByName("from").value == ""){  
+              alert("“谁发布的表白”不能为空!"); 
+              return false;  
+          }
+          else if(document.getElementsByName("to_who").value == ""){  
+              alert("“给谁的表白”不能为空!"); 
+              return false;  
+          }
+          else if(document.getElementsByName("content").value == ""){  
+              alert("表白内容不能为空!"); 
+              return false;  
+          }
+          else{ 
+              return true;
+          }  
+      }
+      </script> 
