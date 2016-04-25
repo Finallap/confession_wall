@@ -21,8 +21,12 @@
 
           	<button class="btn btn-block btn-success" onclick="javascript:window.location.href='<?php echo base_url('release');?>'">点我发布表白 Ψ(￣∀￣)Ψ</button><br>
 
+            <?php
+              $style_array = array("danger","info","success","warning");
+            ?>
+
           	<?php foreach($detail as $key => $list_detail){   ?>
-            <div class="callout callout-info">
+            <div class="callout callout-<?php echo $style_array[array_rand($style_array,1)]; ?>">
               <h4>From &nbsp;&nbsp;<?php echo $list_detail['from'];?> &nbsp;&nbsp; to &nbsp;&nbsp; <?php echo $list_detail['to_who'];?></h4>
               <p><?php echo $list_detail['content'];?></p>
               <span class="pull-right">发表于：<?php echo $list_detail['release_time'];?></span>
