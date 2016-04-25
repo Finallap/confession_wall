@@ -6,6 +6,7 @@ class Release extends CI_Controller {
 	public function index()
 	{
 		$open_id = $_SESSION['open_id'];
+		// $open_id = 100;
 		$this->check_is_wechat($open_id);
 
 		$this->load->view('template/header');
@@ -18,6 +19,7 @@ class Release extends CI_Controller {
 		$this->load->model('Confession_wall_model');
 
 		$open_id = $_SESSION['open_id'];
+		// $open_id = 100;
 		$from = $this->input->post('from', TRUE);;
 		$to_who = $this->input->post('to_who', TRUE);;
 		$content = $this->input->post('content', TRUE);;
@@ -29,6 +31,11 @@ class Release extends CI_Controller {
 		if((strpos($from,"[removed][removed]")!== false)||(strpos($to_who,"[removed][removed]")!== false)||(strpos($content,"[removed][removed]")!== false))
 		{
 			$data['alert_information']="XSS攻击是什么鬼Σ(｀д′*ノ)ノ";
+			$data['href']='';
+		}
+		elseif ((empty($from)!== false)||(empty($to_who)!== false)||(empty($content)!== false))
+		{
+			$data['alert_information']="咋们把东西填完再发布可好Σ(｀д′*ノ)ノ";
 			$data['href']='';
 		}
 		else
@@ -57,6 +64,7 @@ class Release extends CI_Controller {
 		$result = $this->Confession_wall_model->query_final_release_time($open_id);
 		if(!is_null($result))
 		{
+
 			$time1=strtotime(date("Y-m-d H:i:s"));//当前时间
 	 		$time=strtotime($result[0]['release_time']);//上次发布时间
 

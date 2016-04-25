@@ -56,7 +56,7 @@ class Confession_wall_model extends CI_Model{
 
 	public function query_final_release_time($open_id)
 	{
-		$this->db_connect->select("release_time");
+		$this->db_connect->select_max("release_time");
 		$this->db_connect->from("confession_message");
 		$this->db_connect->where("open_id",$open_id);
 		$this->db_connect->limit(1,0);

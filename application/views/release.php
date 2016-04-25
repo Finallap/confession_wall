@@ -23,15 +23,15 @@
                   <div class="box-body">
                     <div class="form-group">
                       <label for="exampleInputEmail1">谁发布的表白</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name = "from" placeholder="">
+                      <input type="text" class="form-control" id="from" name = "from" placeholder="">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">给谁的表白</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name = "to_who" placeholder="">
+                      <input type="text" class="form-control" id="to_who" name = "to_who" placeholder="">
                     </div>
                     <div class="form-group">
                       <label>表白内容</label>
-                      <textarea class="form-control" rows="3" name = "content" placeholder="嘿嘿嘿，表白吧 ..."></textarea>
+                      <textarea class="form-control" rows="3" id="content" name = "content" placeholder="嘿嘿嘿，表白吧 ..."></textarea>
                     </div>
                   </div><!-- /.box-body -->
 
@@ -47,23 +47,4 @@
           </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 
-      <script type="text/javascript"> 
-      function check()
-      {
-          if(document.getElementsByName("from").value == ""){  
-              alert("“谁发布的表白”不能为空!"); 
-              return false;  
-          }
-          else if(document.getElementsByName("to_who").value == ""){  
-              alert("“给谁的表白”不能为空!"); 
-              return false;  
-          }
-          else if(document.getElementsByName("content").value == ""){  
-              alert("表白内容不能为空!"); 
-              return false;  
-          }
-          else{ 
-              return true;
-          }  
-      }
-      </script> 
+ 
