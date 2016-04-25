@@ -36,7 +36,7 @@ class Release extends CI_Controller {
 		elseif ((empty($from)!== false)||(empty($to_who)!== false)||(empty($content)!== false))
 		{
 			$data['alert_information']="咋们把东西填完再发布可好Σ(｀д′*ノ)ノ";
-			$data['href']='';
+			$data['href']='release';
 		}
 		else
 		{
