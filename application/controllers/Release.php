@@ -23,8 +23,8 @@ class Release extends CI_Controller {
 		$from = $this->input->post('from', TRUE);;
 		$to_who = $this->input->post('to_who', TRUE);;
 		$content = $this->input->post('content', TRUE);;
-		$student_name = NULL;
-		$student_id = NULL;
+		$student_name = $_SESSION['name'];
+		$student_id = $_SESSION['student_id'];
 
 		$this->check_is_wechat($open_id);
 
