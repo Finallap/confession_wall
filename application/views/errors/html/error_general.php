@@ -31,7 +31,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="" class="navbar-brand"><b>i</b>Service</a>
+              <a href="http://wechat.aifuwu.org/home/" class="navbar-brand"><b>i</b>Service</a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
@@ -39,7 +39,17 @@
 
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-
+                <li class="dropdown">
+                  <a  href="#" class="dropdown-toggle" data-toggle="dropdown">失物招领 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Home/FindSquare">招领启事</a></li>  
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Home/LoseSquare">寻物启事</a></li>
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Home/InsertFind">发布招领启事</a></li>
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Home/InsertLose">发布寻物启事</a></li>
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Person/myFind">我的招领启事</a></li>
+                    <li><a href="http://wechat.aifuwu.org/lost_found/Person/myLose">我的寻物启事</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                   <a  href="#" class="dropdown-toggle" data-toggle="dropdown">通知公告 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -50,7 +60,6 @@
                     <li><a href="http://wechat.aifuwu.org/notification/notification/notification_list/hqc">后勤处</a></li>
                   </ul>
                 </li>
-
                 <li class="dropdown">
                   <a  href="#" class="dropdown-toggle" data-toggle="dropdown">招聘信息 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -59,14 +68,7 @@
                   </ul>
                 </li>
 
-                <li class="dropdown">
-                  <a  href="#" class="dropdown-toggle" data-toggle="dropdown">表白墙 <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="http://wechat.aifuwu.org/confession_wall/">表白信息查看</a></li>
-                    <li><a href="http://wechat.aifuwu.org/confession_wall/release/">发布表白</a></li>
-                  </ul>
-                </li>
-
+                <li><a href="http://wechat.aifuwu.org/confession_wall/">表白墙</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

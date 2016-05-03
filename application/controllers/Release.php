@@ -21,8 +21,8 @@ class Release extends CI_Controller {
 		$open_id = $_SESSION['open_id'];
 		// $open_id = 100;
 		$from = $this->input->post('from', TRUE);;
-		$to_who = $this->input->post('to_who', TRUE);;
-		$content = $this->input->post('content', TRUE);;
+		$to_who = $this->input->post('to_who', TRUE);
+		$content = $this->input->post('content', TRUE);
 		$student_name = $_SESSION['name'];
 		$student_id = $_SESSION['student_id'];
 
